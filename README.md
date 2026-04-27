@@ -1,5 +1,5 @@
 # Group-12---KNN_-K-MEANS-Activity-Computational_Science2026
-# 🤖 Machine Learning Activities
+# Machine Learning Activities
 ### Computational Science for Computer Science
 **University of Southern Mindanao — College of Engineering and Information Technology**
 *Department of Computing and Information Science*
@@ -110,7 +110,7 @@ $$d = \sqrt{\sum_{i=1}^{n}(x_i - y_i)^2}$$
 | 681 | 5.310 | 1 |
 | 43 | 6.740 | 1 |
 
-**Prediction for K=3:** Neighbors → Index 629 (0), 145 (0), 243 (1) → **Majority Vote: 0 (Non-diabetic)** ✅ Correct
+**Prediction for K=3:** Neighbors → Index 629 (0), 145 (0), 243 (1) → **Majority Vote: 0 (Non-diabetic)** 
 
 
 #### Visualization
@@ -146,12 +146,13 @@ $$d = \sqrt{\sum_{i=1}^{n}(x_i - y_i)^2}$$
 - **Curse of dimensionality** — performance degrades with high-dimensional data
 
 #### When KNN is Appropriate
-- ✅ Small to medium-sized, clean datasets
-- ✅ Low number of features
-- ✅ As a baseline model before trying complex algorithms
-- ❌ Real-time prediction systems
-- ❌ High-dimensional data
-- ❌ Severely imbalanced class distributions
+-  Small to medium-sized, clean datasets
+-  Low number of features
+-  As a baseline model before trying complex algorithms
+#### When KNN is  not Appropriate
+-  Real-time prediction systems
+-  High-dimensional data
+-  Severely imbalanced class distributions
 
 #### Visualization 
 ![alt text](images/image-2.png)
@@ -245,7 +246,7 @@ $$x' = \frac{x - \min}{\max - \min}$$
 | 14 | 160 | 100 | 33.94 | High |
 | 3 | 165 | 98 | 36.40 | High |
 
-**Prediction for K=3:** Neighbors → ID 1 (Moderate), 9 (Moderate), 5 (Moderate) → **Predicted: Moderate** ✅
+**Prediction for K=3:** Neighbors → ID 1 (Moderate), 9 (Moderate), 5 (Moderate) → **Predicted: Moderate** 
 
 ---
 
@@ -422,10 +423,11 @@ $$z = \frac{x - \mu}{\sigma}$$
 - Requires predetermining K, which demands careful interpretation
 
 #### When K-Means is Appropriate
-- ✅ Purely numerical data with clear natural groupings
-- ✅ Exploratory / unsupervised analysis goals
-- ❌ Datasets with many categorical variables
-- ❌ Irregularly shaped or highly overlapping clusters
+-  Purely numerical data with clear natural groupings
+-  Exploratory / unsupervised analysis goals
+#### When K-Means is not Appropriate
+-  Datasets with many categorical variables
+-  Irregularly shaped or highly overlapping clusters
 
 #### Key Observation
 Proper feature selection and standardization significantly improved clustering quality. The Elbow Method provided a principled way to choose K=3, yielding well-separated and interpretable vehicle segments despite some visual overlap in 2D projections.
